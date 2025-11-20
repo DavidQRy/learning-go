@@ -23,9 +23,21 @@ func main() {
 	var listaFrutas = [5]string{"Pera", "Naranja"}
 	fmt.Println(listaFrutas[4])
 
-	listaPaises := [4]string{"", "Colombia", "Estados Unidos", "Argentina"}
-	fmt.Println(listaPaises)
-	listaPaises[0] = "Chile"
+	/* 	listaPaises := [4]string{"", "Colombia", "Estados Unidos", "Argentina"}
+	   	fmt.Println(listaPaises)
+	   	listaPaises[0] = "Chile"
+	   	fmt.Println(listaPaises) */
+
+	listaPaises := []string{"Colombia", "Estados Unidos", "Argentina"}
+	listaPaises = append(listaPaises, "Chile")
 	fmt.Println(listaPaises)
 
+	listaPaises2 := listaPaises[1:3]
+	fmt.Println(listaPaises2)
+
+	listaPaises3 := listaPaises[2:]
+	fmt.Println(listaPaises3)
+
+	listaPaises4 := listaPaises[:2]
+	fmt.Println(listaPaises4)
 }
